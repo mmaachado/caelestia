@@ -21,7 +21,7 @@ if status is-interactive
     abbr gp 'git push'
     abbr gpl 'git pull'
     abbr gsw 'git switch'
-    abbr gsm 'git switch main'
+    abbr gsm 'git switch master'
     abbr gb 'git branch'
     abbr gbd 'git branch -d'
     abbr gco 'git checkout'
@@ -39,7 +39,13 @@ if status is-interactive
     function mark_prompt_start --on-event fish_prompt
         echo -en "\e]133;A\e\\"
     end
-    
+
+    # Dir structure
+    export XDG_CONFIG_HOME="$HOME/.config"
+    export XDG_DATA_HOME="$HOME/.local/share"
+    export XDG_CACHE_HOME="$HOME/.cache"
+    export XDG_STATE_HOME="$HOME/.local/state"
+
     # Custom fish config
     source ~/.config/caelestia/user-config.fish 2> /dev/null
 end
