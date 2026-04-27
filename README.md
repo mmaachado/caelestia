@@ -1,12 +1,12 @@
 # caelestia
 
-This is the main repo of the caelestia dots and contains the user configs for
-apps. This repo also includes an install script to install the entire dots.
+This is a fork of the main repo of the caelestia dots and contains the my user configs for
+apps.
 
 ## Installation
 
 Simply clone this repo and run the install script (you need
-[`fish`](https://github.com/fish-shell/fish-shell) installed).
+[`fish`](https://github.com/mmaachado/caelestia.git) installed).
 
 > [!WARNING]
 > The install script symlinks all configs into place, so you CANNOT
@@ -34,7 +34,7 @@ options:
 For example:
 
 ```sh
-git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
+git clone https://github.com/mmaachado/caelestia.git ~/.local/share/caelestia
 ~/.local/share/caelestia/install.fish
 ```
 
